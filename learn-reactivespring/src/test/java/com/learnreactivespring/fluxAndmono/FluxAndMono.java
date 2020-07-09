@@ -126,8 +126,8 @@ public class FluxAndMono {
 //		Flux.just(1,5,10).map(num -> num*10).subscribe(System.out::println);
 //	}
 	
-//	@Test
-//	public void FlatMapTest() {
-//		Flux.just(1,5,10).log().flatMap(num -> Flux.just(num*10)).subscribe(System.out::println);
-//	}
+	@Test
+	public void FlatMapTest() {
+		Flux.just(1,5,10).log().flatMap(num -> Flux.just(num*10)).subscribe(System.out::println);
+	}
 }
