@@ -7,6 +7,13 @@ import { HeaderComponent } from './header/header.component';
 import { PromiseComponent } from './promise/promise.component';
 import { ObservableComponent } from './observable/observable.component';
 import { CallbackComponent } from './callback/callback.component';
+import { FromEventComponent } from './observable/from-event/from-event.component';
+import { AllComponent } from './observable/all/all.component';
+import { IntervalComponent } from './observable/interval/interval.component';
+import { TimerComponent } from './observable/timer/timer.component';
+import { OfComponent } from './observable/of/of.component';
+import { FromComponent } from './observable/from/from.component';
+import { ToArrayComponent } from './observable/to-array/to-array.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +21,15 @@ import { CallbackComponent } from './callback/callback.component';
     HeaderComponent,
     PromiseComponent,
     ObservableComponent,
-    CallbackComponent
+    CallbackComponent,
+    AllComponent,
+    // rxjs components
+    FromEventComponent,
+    IntervalComponent,
+    TimerComponent,
+    OfComponent,
+    FromComponent,
+    ToArrayComponent
   ],
   imports: [
     BrowserModule,
