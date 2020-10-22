@@ -1,7 +1,7 @@
 package com.learnreactivespring.fluxAndmono;
 import java.time.Duration;
+import java.util.Arrays;
 
-import org.assertj.core.util.Arrays;
 import org.junit.jupiter.api.Test;
 
 import reactor.core.publisher.Flux;
