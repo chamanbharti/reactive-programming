@@ -8,5 +8,10 @@
    <bean id="airtel" class="spring5.ioc.Airtel"></bean> 
    <bean id="vodafone" class="spring5.ioc.Vodafone"></bean> 
     <!-- more bean definitions go here -->
+    
+    <bean id="bike" class="spring5.ioc.Bike"></bean> 
+    
+   <bean id="car" class="spring5.ioc.Car"></bean> 
+     <bean id="airoplane" class="spring5.ioc.Airoplane"></bean> 
 
 </beans>

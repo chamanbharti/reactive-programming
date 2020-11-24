@@ -7,6 +7,8 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
         
+        
+        <context:annotation-config></context:annotation-config>
   <!-- collaborators and configuration for this bean go here -->
   
   					<!--  manually -->
@@ -61,7 +63,7 @@
    	     <!--  here byName fails also -->
    	     
    	      <!--  @Qualifier -->
-   	      <bean id="humanHeart" class="spring5.di.autowiring.Heart">
+   	     <!--  <bean id="humanHeart" class="spring5.di.autowiring.Heart">
    	      	<property name="nameOfAnimal" value="Human"></property>
    	      	<property name="noOfHeart" value="1"></property>
    	      </bean>
@@ -70,8 +72,13 @@
    	      	<property name="noOfHeart" value="3"></property>
    	      </bean>
    	    
-	    <bean id="human" class="spring5.di.autowiring.Human"> <!-- @Autowired in code -->
-   	    </bean> 
+	    <bean id="human" class="spring5.di.autowiring.Human"> @Autowired in code
+   	    </bean>  -->
+   	    
+   	    <bean id="dept1" class="spring5.di.setter_constructor.HRDept"> </bean> 
+   	    <bean id="dept2" class="spring5.di.setter_constructor.HRDept"> </bean> 
+   	     
+   	     <bean id="company" class="spring5.di.setter_constructor.Company"> </bean> 
      	
 
 </beans>
